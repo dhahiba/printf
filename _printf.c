@@ -37,6 +37,10 @@ case '%':
 putchar('%');
 count++;
 break;
+case 'd':
+putchar(i);
+count++;
+break;
 default:
 putchar('%');
 putchar(format[i]);
