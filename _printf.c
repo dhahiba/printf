@@ -9,7 +9,7 @@
 int _printf(const char *format, ...)
 {
 va_list args;
-int i, count = 0;
+int i, d, count = 0;
 char c;
 char *s;
 
@@ -38,7 +38,8 @@ putchar('%');
 count++;
 break;
 case 'd':
-putchar(i);
+d = (int) va_arg(args, int);
+printInteger(d);
 count++;
 break;
 default:
