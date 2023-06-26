@@ -39,7 +39,7 @@ putchar('%');
 count++;
 break;
 case 'd':
-d = (int) va_arg(args, int);
+d =va_arg(args, int);
 printInteger(d);
 count++;
 break;
